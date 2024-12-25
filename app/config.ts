@@ -31,7 +31,7 @@ import { getDefaultConfig } from '@rainbow-me/rainbowkit';
 export const config = getDefaultConfig({
   appName: 'Demo',
   projectId: process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID ?? '',
-  chains: [mainnet, arbitrum, base, bsc, optimism, polygon],
+  chains: [mainnet, sepolia],
   wallets: [
     {
       groupName: 'Popular',
