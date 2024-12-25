@@ -31,7 +31,7 @@ import { getDefaultConfig } from '@rainbow-me/rainbowkit';
 export const config = getDefaultConfig({
   appName: 'Demo',
   projectId: process.env.NEXT_PUBLIC_WALLET_CONNECT_PROJECT_ID ?? '',
-  chains: [mainnet, sepolia],
+  chains: [mainnet, arbitrum, base, bsc, optimism, polygon],
   wallets: [
     {
       groupName: 'Popular',
@@ -49,13 +49,13 @@ export const config = getDefaultConfig({
       ]
     }
   ],
-  transports: {
-    [mainnet.id]: fallback([
-      unstable_connector(injected),
-      http()
-    ]),
-    [sepolia.id]: http(),
-  },
+  // transports: {
+  //   [mainnet.id]: fallback([
+  //     unstable_connector(injected),
+  //     http()
+  //   ]),
+  //   [sepolia.id]: http(),
+  // },
 })
 
 // export const config = createConfig({
