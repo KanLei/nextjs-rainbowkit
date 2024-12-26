@@ -1,5 +1,3 @@
-"use client"
-
 import '@rainbow-me/rainbowkit/styles.css';
 import { createConfig, WagmiProvider, cookieStorage, createStorage, unstable_connector } from 'wagmi';
 import {
@@ -49,6 +47,7 @@ export const config = getDefaultConfig({
       ]
     }
   ],
+  // Warning: Make sure the transports configuration matches the enabled chains
   // transports: {
   //   [mainnet.id]: fallback([
   //     unstable_connector(injected),
