@@ -51,6 +51,7 @@ export const config = getDefaultConfig({
   storage: createStorage({
     storage: cookieStorage,
   }),
+  // multiInjectedProviderDiscovery: false,
   // Warning: Make sure the transports configuration matches the enabled chains
   // transports: {
   //   [mainnet.id]: fallback([
