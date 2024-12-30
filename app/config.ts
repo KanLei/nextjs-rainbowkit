@@ -47,6 +47,10 @@ export const config = getDefaultConfig({
       ]
     }
   ],
+  ssr: true,
+  storage: createStorage({
+    storage: cookieStorage,
+  }),
   // Warning: Make sure the transports configuration matches the enabled chains
   // transports: {
   //   [mainnet.id]: fallback([
